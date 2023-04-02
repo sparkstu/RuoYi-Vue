@@ -1,6 +1,6 @@
 package com.ruoyi.api.domain.bo;
 
-import com.admin.common.core.domain.BaseEntity;
+import com.ruoyi.common.core.domain.BaseEntity;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;

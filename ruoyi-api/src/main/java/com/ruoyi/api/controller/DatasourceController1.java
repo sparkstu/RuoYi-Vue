@@ -1,7 +1,7 @@
 package com.ruoyi.api.controller;
 
 import com.ruoyi.api.service.IDatasourceService;
-import com.admin.common.core.controller.BaseController;
+import com.ruoyi.common.core.controller.BaseController;
 import io.swagger.annotations.Api;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;

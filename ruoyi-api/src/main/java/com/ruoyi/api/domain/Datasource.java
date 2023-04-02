@@ -1,7 +1,7 @@
 package com.ruoyi.api.domain;
 
-import com.admin.common.annotation.Excel;
-import com.admin.common.core.domain.BaseEntity;
+import com.ruoyi.common.annotation.Excel;
+import com.ruoyi.common.core.domain.BaseEntity;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;

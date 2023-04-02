@@ -8,7 +8,7 @@ import com.ruoyi.api.domain.bo.DatasourceBo;
 import com.ruoyi.api.domain.vo.DatasourceVo;
 import com.ruoyi.api.mapper.DatasourceMapper;
 import com.ruoyi.api.service.IDatasourceService;
-import com.admin.common.utils.DateUtils;
+import com.ruoyi.common.utils.DateUtils;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

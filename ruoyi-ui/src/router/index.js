@@ -42,6 +42,74 @@ export const constantRoutes = [
     ]
   },
   {
+    path: '/cms',
+    component: (resolve) => require(['@/views/cms/index'], resolve),
+    hidden: true,
+    redirect: '/cms/main/cmsIndex',
+    children: [
+      {
+        path: 'main',
+        component: (resolve) => require(['@/views/cms/main'], resolve),
+        hidden: true,
+        children: [
+          {
+            path: 'cmsIndex',
+            component: (resolve) => require(['@/views/cms/components/cmsIndex'], resolve),
+            name: 'cmsIndex',
+            meta: {
+              title: '首页',
+            }
+          },
+          {
+            path: 'essay',
+            component: (resolve) => require(['@/views/cms/components/cmsEssay'], resolve),
+            name: 'essay',
+            meta: {
+              title: '随笔',
+            }
+          },
+          {
+            path: 'message',
+            component: (resolve) => require(['@/views/cms/components/cmsMessage'], resolve),
+            name: 'message',
+            meta: {
+              title: '留言',
+            }
+          },
+          {
+            path: 'blog',
+            component: (resolve) => require(['@/views/cms/components/cmsBlog'], resolve),
+            name: 'blog',
+            meta: {
+              title: '博客详情',
+            }
+          }
+        ]
+      },
+      {
+        path: 'doucument',
+        component: (resolve) => require(['@/views/cms/components/cmsDoucument'], resolve),
+        hidden: true,
+        name: '文档',
+      }
+    ]
+  },
+  {
+    path: '/cmsLogin',
+    component: (resolve) => require(['@/views/cms/cmslogin'], resolve),
+    hidden: true,
+  },
+  {
+    path: '/cmsRegister',
+    component: (resolve) => require(['@/views/cms/cmsRegister'], resolve),
+    hidden: true
+  },
+  {
+    path: '/admin',
+    redirect: '/login',
+    hidden: true
+  },
+  {
     path: '/login',
     component: () => import('@/views/login'),
     hidden: true

@@ -1,8 +1,8 @@
 package com.admin.boss.service;
 
 import cn.hutool.core.map.MapBuilder;
-import com.admin.common.core.domain.entity.SysUser;
-import com.admin.common.utils.spring.SpringUtils;
+import com.ruoyi.common.core.domain.entity.SysUser;
+import com.ruoyi.common.utils.spring.SpringUtils;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import lombok.extern.slf4j.Slf4j;
 import org.jsoup.Jsoup;
