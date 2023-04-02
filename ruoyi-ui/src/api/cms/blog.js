@@ -1,5 +1,5 @@
 import request from '@/utils/request'
-import { praseStrEmpty } from "@/utils/ruoyi";
+import { parseStrEmpty } from "@/utils/ruoyi";
 
 // 首页查询文章列表
 export function cmsListBlog(query) {
@@ -17,7 +17,7 @@ export function cmsListBlog(query) {
 // 首页查询文章详细
 export function getBlogDetail(id) {
   return request({
-    url: '/cms/blog/cms/detail/' + praseStrEmpty(id),
+    url: '/cms/blog/cms/detail/' + parseStrEmpty(id),
     headers: {
       isToken: false
     },
@@ -100,7 +100,7 @@ export function listBlog(query) {
 // 查询文章管理详细
 export function getBlog(id) {
   return request({
-    url: '/cms/blog/' + praseStrEmpty(id),
+    url: '/cms/blog/' + parseStrEmpty(id),
     method: 'get'
   })
 }

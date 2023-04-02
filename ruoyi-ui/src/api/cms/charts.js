@@ -1,5 +1,5 @@
 import request from '@/utils/request'
-import { praseStrEmpty } from "@/utils/ruoyi";
+import { parseStrEmpty } from "@/utils/ruoyi";
 
 // 查询总阅读量/文章总数/评论总数/留言总数
 export function total() {

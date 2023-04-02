@@ -5,7 +5,7 @@
   </el-container>
 </template>
 
-<script>
+<script scoped>
   export default {
     name: 'cmsDoucument',
     data() {
@@ -28,7 +28,7 @@
       }
     }
   }
-   </script scoped>
+   </script>
 
   <style scoped rel = "stylesheet/scss"lang = "scss" >
   </style>
