@@ -6,12 +6,12 @@
     "versionCode" : "100",
     "transformPx" : false,
     "app-plus" : {
-		/* 异形屏适配 */
-		"safearea" : {
-			 "bottom" : {
-				  "offset" : "none"
-			 }
-		},
+        /* 异形屏适配 */
+        "safearea" : {
+            "bottom" : {
+                "offset" : "none"
+            }
+        },
         /* 5+App特有相关 */
         "usingComponents" : true,
         "splashscreen" : {
@@ -133,5 +133,10 @@
         },
         "usingComponents" : true
     },
-    "vueVersion" : "2"
+    "vueVersion" : "2",
+    "h5" : {
+        "devServer" : {
+            "port" : 81
+        }
+    }
 }

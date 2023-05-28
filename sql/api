@@ -1,0 +1,2 @@
+
+insert into sys_menu values('118',  '接口管理', '3',   '3', 'api',    'tool/api/index',       '', 1, 0, 'C', '0', '0', 'tool:api:list',       'swagger',       'admin', sysdate(), '', null, '系统接口菜单');
