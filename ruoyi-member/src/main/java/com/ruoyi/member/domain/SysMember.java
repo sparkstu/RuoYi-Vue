@@ -1,5 +1,6 @@
 package com.ruoyi.member.domain;
 
+import com.baomidou.mybatisplus.annotation.TableName;
 import com.ruoyi.common.annotation.Excel;
 import com.ruoyi.common.core.domain.BaseEntity;
 import com.fasterxml.jackson.annotation.JsonFormat;
@@ -21,6 +22,7 @@ import java.util.Date;
 @ToString
 @Accessors(chain = true)
 @Schema(defaultValue = "会员对象")
+@TableName("sys_member")
 public class SysMember extends BaseEntity {
     private static final long serialVersionUID = 1L;
 

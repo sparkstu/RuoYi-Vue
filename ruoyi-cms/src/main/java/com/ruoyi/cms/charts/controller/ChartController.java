@@ -1,10 +1,4 @@
 package com.ruoyi.cms.charts.controller;
-/**
- * @program: ruo-yi-vue-blog
- * @Author: WangNing
- * @Description: 〈图表后台接口〉
- * @Date: 2022/4/25 10:37
- */
 
 import com.ruoyi.cms.blog.domain.CmsBlog;
 import com.ruoyi.cms.charts.service.IChartService;
@@ -18,8 +12,8 @@ import com.ruoyi.cms.type.domain.CmsType;
 import com.ruoyi.cms.type.service.ICmsTypeService;
 import com.ruoyi.common.core.controller.BaseController;
 import com.ruoyi.common.utils.SecurityUtils;
-import com.ruoyi.framework.web.service.SysPermissionService;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.ruoyi.system.service.SysPermissionService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -28,30 +22,26 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 /**
- * @Author: WangNing
- * @Description:〈图表后台接口〉
- * @Date: 2022/4/25 10:37
+ * Author: WangNing
+ * Description:〈图表后台接口〉
+ * Date: 2022/4/25 10:37
  **/
 @RestController
 @RequestMapping("/cms/chart")
+@RequiredArgsConstructor
 public class ChartController extends BaseController {
-    @Autowired
-    private IChartService chartService;
 
-    @Autowired
-    private ICmsTypeService cmsTypeService;
+    private final IChartService chartService;
 
-    @Autowired
-    private ICmsTagService cmsTagService;
+    private final ICmsTypeService cmsTypeService;
 
-    @Autowired
-    private ICmsCommentService cmsCommentService;
+    private final ICmsTagService cmsTagService;
 
-    @Autowired
-    private ICmsMessageService cmsMessageService;
+    private final ICmsCommentService cmsCommentService;
 
-    @Autowired
-    private SysPermissionService permissionService;
+    private final ICmsMessageService cmsMessageService;
+
+    private final SysPermissionService permissionService;
 
     /**
      * 查询总阅读量/文章总数/评论总数/留言总数

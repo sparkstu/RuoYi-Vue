@@ -19,7 +19,7 @@ public interface SysMemberMapper extends BaseMapper<SysMember>
      * @param id 会员主键
      * @return 会员
      */
-    public SysMember selectSysMemberById(Long id);
+    SysMember selectSysMemberById(Long id);
 
     /**
      * 查询会员列表
@@ -27,7 +27,7 @@ public interface SysMemberMapper extends BaseMapper<SysMember>
      * @param sysMember 会员
      * @return 会员集合
      */
-    public List<SysMember> selectSysMemberList(SysMember sysMember);
+    List<SysMember> selectSysMemberList(SysMember sysMember);
 
     /**
      * 新增会员
@@ -35,7 +35,7 @@ public interface SysMemberMapper extends BaseMapper<SysMember>
      * @param sysMember 会员
      * @return 结果
      */
-    public int insertSysMember(SysMember sysMember);
+    int insertSysMember(SysMember sysMember);
 
     /**
      * 修改会员
@@ -43,7 +43,7 @@ public interface SysMemberMapper extends BaseMapper<SysMember>
      * @param sysMember 会员
      * @return 结果
      */
-    public int updateSysMember(SysMember sysMember);
+    int updateSysMember(SysMember sysMember);
 
     /**
      * 删除会员
@@ -51,7 +51,7 @@ public interface SysMemberMapper extends BaseMapper<SysMember>
      * @param id 会员主键
      * @return 结果
      */
-    public int deleteSysMemberById(Long id);
+    int deleteSysMemberById(Long id);
 
     /**
      * 批量删除会员
@@ -59,5 +59,5 @@ public interface SysMemberMapper extends BaseMapper<SysMember>
      * @param ids 需要删除的数据主键集合
      * @return 结果
      */
-    public int deleteSysMemberByIds(Long[] ids);
+    int deleteSysMemberByIds(Long[] ids);
 }

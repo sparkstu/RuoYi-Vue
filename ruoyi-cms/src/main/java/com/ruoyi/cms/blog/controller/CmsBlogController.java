@@ -15,7 +15,8 @@ import com.ruoyi.common.enums.BusinessType;
 import com.ruoyi.common.utils.SecurityUtils;
 import com.ruoyi.common.utils.StringUtils;
 import com.ruoyi.common.utils.poi.ExcelUtil;
-import com.ruoyi.framework.web.service.SysPermissionService;
+import com.ruoyi.system.service.SysPermissionService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
@@ -31,6 +32,7 @@ import java.util.Set;
  * @author ning
  * @date 2022-01-01
  */
+@Tag(name = "博客模块")
 @RestController
 @RequestMapping("/cms/blog")
 public class CmsBlogController extends BaseController

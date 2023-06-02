@@ -1,7 +1,8 @@
 package com.ruoyi.system.service;
 
+import com.ruoyi.common.core.domain.entity.SysOperLog;
+
 import java.util.List;
-import com.ruoyi.system.domain.SysOperLog;
 
 /**
  * 操作日志 服务层
