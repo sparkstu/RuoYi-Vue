@@ -2,15 +2,17 @@ package com.ruoyi.member.mapper;
 
 import com.ruoyi.member.domain.SysMember;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 
 /**
  * 会员Mapper接口
- * 
- * @author wei
- * @date 2022-07-29
+ * <p>
+ * author wei
+ * date 2022-07-29
  */
+@Mapper
 public interface SysMemberMapper extends BaseMapper<SysMember>
 {
     /**

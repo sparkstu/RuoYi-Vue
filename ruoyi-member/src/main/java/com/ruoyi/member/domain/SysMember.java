@@ -7,6 +7,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.ToString;
 import lombok.experimental.Accessors;
 
@@ -14,10 +15,10 @@ import java.util.Date;
 
 /**
  * 会员对象 sys_member
- *
- * @author wei
- * @date 2022-07-29
+ * author wei
+ * date 2022-07-29
  */
+@EqualsAndHashCode(callSuper = true)
 @Data
 @ToString
 @Accessors(chain = true)

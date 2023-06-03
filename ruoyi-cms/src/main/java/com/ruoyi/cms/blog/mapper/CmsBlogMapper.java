@@ -1,8 +1,10 @@
 package com.ruoyi.cms.blog.mapper;
 
-import java.util.List;
 import com.ruoyi.cms.blog.domain.CmsBlog;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 /**
  * 文章管理Mapper接口
@@ -10,6 +12,7 @@ import org.apache.ibatis.annotations.Param;
  * @author ning
  * @date 2022-01-01
  */
+@Mapper
 public interface CmsBlogMapper 
 {
     /**

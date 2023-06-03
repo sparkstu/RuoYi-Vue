@@ -18,7 +18,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  */
 @EnableTransactionManagement(proxyTargetClass = true)
 @Configuration
-@MapperScan("${mybatis-plus.mapperPackage}")
+@MapperScan(basePackages = "com.ruoyi.**.mapper")
 public class MybatisPlusConfig {
 
     @Bean

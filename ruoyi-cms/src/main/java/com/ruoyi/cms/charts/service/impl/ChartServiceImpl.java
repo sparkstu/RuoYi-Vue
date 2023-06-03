@@ -13,7 +13,7 @@ import com.ruoyi.cms.comment.domain.CmsComment;
 import com.ruoyi.cms.comment.mapper.CmsCommentMapper;
 import com.ruoyi.cms.message.domain.CmsMessage;
 import com.ruoyi.cms.message.mapper.CmsMessageMapper;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -24,16 +24,14 @@ import java.util.List;
  * @Date: 2022/4/27 10:18
  **/
 @Service
+@RequiredArgsConstructor
 public class ChartServiceImpl implements IChartService {
 
-    @Autowired
-    private CmsBlogMapper cmsBlogMapper;
+    private final CmsBlogMapper cmsBlogMapper;
 
-    @Autowired
-    private CmsCommentMapper cmsCommentMapper;
+    private final CmsCommentMapper cmsCommentMapper;
 
-    @Autowired
-    private CmsMessageMapper cmsMessageMapper;
+    private final CmsMessageMapper cmsMessageMapper;
 
     @Override
     public List<CmsBlog> selectList(CmsBlog cmsBlog) {
